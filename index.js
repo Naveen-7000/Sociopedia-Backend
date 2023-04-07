@@ -24,7 +24,6 @@ const app = express();
 app.use(cors());
 app.use(helmet());
 app.use(helmet.crossOriginResourcePolicy({ policy: "same-origin" }));
-app.use(helmet.referrerPolicy({ policy: "same-origin" }));
 
 /* CONFIGURATIONS */
 const __filename = fileURLToPath(import.meta.url);

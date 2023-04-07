@@ -5,7 +5,7 @@ This is backend of **Sociopedia**.
 # Requirements
 Node.js and NPM installed on your machine.
 
-**#Note : To run localy you need to set .env file in your root directory with DB url and PORT, JWT_SECRET and JWT_EXPIRY** : **.env file is already there feel free to use it**
+**#Note :  **.env file is already there feel free to use it**
 
 
 

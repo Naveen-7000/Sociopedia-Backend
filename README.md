@@ -5,7 +5,9 @@ This is backend of **Sociopedia**.
 # Requirements
 Node.js and NPM installed on your machine.
 
+#Note : **To run localy you need to set .env file in your root directory with DB url and PORT, JWT_SECRET and JWT_EXPIRY**
 #Steps
+
 *Open your terminal and navigate to the folder where you want to create your new project.
 *Run the following command to create a new Node.js project:
 ```

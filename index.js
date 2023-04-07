@@ -16,14 +16,18 @@ import { createPost } from "./controllers/posts.js";
 import { verifyToken } from "./middleware/auth.js";
 import { connectWithDb } from "./config/db.js";
 
+
+
+
+// cors
+app.use(cors());
+
 /* CONFIGURATIONS */
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 dotenv.config();
 const app = express();
 app.use(express.json());
-app.use(cors());
-app.use(helmet());
 app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("common"));
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
@@ -41,12 +45,6 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
-// patch for cors
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
 
 /* ROUTES WITH FILES */
 app.post("/auth/register", upload.single("picture"), register);

@@ -5,11 +5,11 @@ This is backend of **Sociopedia**.
 # Requirements
 Node.js and NPM installed on your machine.
 
-**#Note :  **.env file is already there feel free to use it**
+# Note :  **.env file is already there feel free to use it**
 
 
 
-#Steps
+# Steps
 
 *Open your terminal and navigate to the folder where you want to create your new project.
 *Run the following command to create a new Node.js project:

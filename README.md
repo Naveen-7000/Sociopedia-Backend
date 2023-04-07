@@ -27,3 +27,16 @@ const cookieParser = require("cookie-parser");
 const dotenv = require("dotenv");
 
 ```
+* To run the project:
+Add the following script to your package.json file:
+```
+"scripts": {
+  "start": "nodemon app.js"
+}
+
+```
+And then :
+```
+npm start
+
+```
